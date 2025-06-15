@@ -1,0 +1,40 @@
+body {
+    background: #f2f2f7;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Segoe UI", Roboto, Arial, sans-serif;
+}
+.ios-header {
+    background: #ffffff;
+    border-bottom: 1px solid #d1d1d6;
+    color: #111;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+.ios-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 2px 8px rgba(60,60,67,0.07);
+    border: 1px solid #e5e5ea;
+}
+.ios-input, .ios-btn, .ios-list {
+    border-radius: 12px !important;
+    border: 1px solid #d1d1d6 !important;
+}
+.ios-btn {
+    background: linear-gradient(90deg, #007aff 60%, #0051a8 100%);
+    border: none !important;
+    font-weight: 500;
+}
+.ios-btn:hover {
+    background: #0051a8;
+}
+.ios-list {
+    background: #f9f9f9;
+    border: none !important;
+    margin-bottom: 4px;
+}
+main {
+    min-height: 300px;
+}
+h2 {
+    margin-top: 20px;
+}

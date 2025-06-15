@@ -1,0 +1,31 @@
+-- Membuat database
+CREATE DATABASE IF NOT EXISTS biodata_db;
+USE biodata_db;
+
+-- Tabel biodata
+CREATE TABLE IF NOT EXISTS biodata (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nama VARCHAR(100) NOT NULL,
+    ttl VARCHAR(100) NOT NULL,
+    jk VARCHAR(20) NOT NULL,
+    alamat VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabel pendidikan
+CREATE TABLE IF NOT EXISTS pendidikan (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sd VARCHAR(100) NOT NULL,
+    smp VARCHAR(100) NOT NULL,
+    sma VARCHAR(100) NOT NULL,
+    kuliah VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabel kontak
+CREATE TABLE IF NOT EXISTS kontak (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(100) NOT NULL,
+    telepon VARCHAR(30) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
